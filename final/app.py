@@ -11,7 +11,7 @@ import urllib.parse
 
 df = pd.read_csv("final/processed_trek_data.csv")
 model = joblib.load("final/model.pkl")
-ohe = joblib.load("finalohe.pkl")
+ohe = joblib.load("final/ohe.pkl")
 mlb = joblib.load("final/mlb.pkl")
 columns = joblib.load("final/columns.pkl")
 
