@@ -10,7 +10,7 @@ import urllib.parse
 # ===============================
 
 df = pd.read_csv("final/processed_trek_data.csv")
-model = joblib.load("model.pkl")
+model = joblib.load("final/model.pkl")
 ohe = joblib.load("ohe.pkl")
 mlb = joblib.load("mlb.pkl")
 columns = joblib.load("columns.pkl")
