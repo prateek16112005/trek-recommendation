@@ -11,9 +11,9 @@ import urllib.parse
 
 df = pd.read_csv("final/processed_trek_data.csv")
 model = joblib.load("final/model.pkl")
-ohe = joblib.load("ohe.pkl")
-mlb = joblib.load("mlb.pkl")
-columns = joblib.load("columns.pkl")
+ohe = joblib.load("finalohe.pkl")
+mlb = joblib.load("final/mlb.pkl")
+columns = joblib.load("final/columns.pkl")
 
 df['Location'] = df[['City', 'State', 'Country']].fillna('').agg(', '.join, axis=1)
 states = sorted(df['State'].dropna().unique())
